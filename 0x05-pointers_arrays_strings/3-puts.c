@@ -2,26 +2,25 @@
 
 
 /**
- * _puts - function that prints a string
- * @str: pointer to char
- * Return: nothing
+ * @_strlen - function that Returns the length of a string
+ * @s: pointer to an string
+ * Return: int
  */
 
 
-void _puts(char *str)
+int _strlen(char *s)
 
 {
 
-	int i = 0;
+int i = 0;
 
 
-	while (str[i] != '\0')
+while (s[i] != '\0')
 
-	{
+{
 
-	_putcha(str[i]);
-											i += 1;								}
+	i += 1;									}
 
-	_putchar('\n');
+return (i);
 
 }
